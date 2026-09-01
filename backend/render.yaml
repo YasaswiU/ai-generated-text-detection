@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ai-generated-text-detection-backend
+    env: docker
+    plan: starter
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false
+      - key: MAX_TEXT_LENGTH
+        value: "20000"
+      - key: MIN_TEXT_LENGTH
+        value: "50"
+      - key: PERPLEXITY_MODEL_NAME
+        value: xlm-roberta-base
+      - key: INFERENCE_DEVICE
+        value: cpu
+      - key: MODEL_DIR
+        value: models

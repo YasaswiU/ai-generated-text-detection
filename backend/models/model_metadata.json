@@ -1,0 +1,66 @@
+{
+  "model_version": "v20260831-093045",
+  "training_date": "2026-08-31T09:30:45.364194+00:00",
+  "supported_languages": [
+    "en",
+    "te",
+    "hi"
+  ],
+  "feature_version": "1.0.0",
+  "threshold": 0.5,
+  "calibration_method": "sigmoid",
+  "dataset_version": "v1",
+  "base_model": "logistic_regression",
+  "threshold_sweep": [
+    {
+      "threshold": 0.5,
+      "coverage": 1.0,
+      "selective_risk": 0.0
+    },
+    {
+      "threshold": 0.55,
+      "coverage": 1.0,
+      "selective_risk": 0.0
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "selective_risk": 0.0
+    },
+    {
+      "threshold": 0.65,
+      "coverage": 1.0,
+      "selective_risk": 0.0
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.0,
+      "selective_risk": 1.0
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.0,
+      "selective_risk": 1.0
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.0,
+      "selective_risk": 1.0
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.0,
+      "selective_risk": 1.0
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.0,
+      "selective_risk": 1.0
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.0,
+      "selective_risk": 1.0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# --- Python / backend ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.env
+
+# --- ML artifacts (regenerate via training pipeline; too large for git) ---
+backend/models/*.joblib
+!backend/models/.gitkeep
+*.pt
+*.bin
+*.safetensors
+
+# --- Training data / outputs (do not commit real student/AI text corpora) ---
+training/data/**/*.txt
+training/data/manifest.csv
+training/data/features.csv
+training/data/evaluation_report.json
+training/data/model_comparison.csv
+training/data/model_comparison.png
+training/data/best_model_raw.joblib
+!training/data/README.md
+
+# --- Node / frontend ---
+node_modules/
+dist/
+.vite/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
