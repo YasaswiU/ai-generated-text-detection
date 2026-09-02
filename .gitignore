@@ -8,7 +8,6 @@ __pycache__/
 .env
 
 # --- ML artifacts (regenerate via training pipeline; too large for git) ---
-backend/models/*.joblib
 !backend/models/.gitkeep
 *.pt
 *.bin
